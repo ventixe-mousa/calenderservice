@@ -1,0 +1,6 @@
+@CalenderService_HostAddress = http://localhost:5041
+
+GET {{CalenderService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

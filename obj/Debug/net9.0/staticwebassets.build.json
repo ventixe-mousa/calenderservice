@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5/Pax4ARmmCnfu+3LqrLPq6labyiHKY0N75nHBLXm9s=",
+  "Source": "CalendarService",
+  "BasePath": "_content/CalendarService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
