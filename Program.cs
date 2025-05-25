@@ -33,15 +33,16 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Calendar microservice with EF Core & Azure SQL"
     });
 });
+Console.WriteLine("Trigger build"); // temporär rad
 
+
+// Ändrat för kolla om det funkar i Azure
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "CalendarService v1"));
-}
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CalendarService v1"));
+
 
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
